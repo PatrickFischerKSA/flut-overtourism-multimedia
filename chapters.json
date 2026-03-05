@@ -1,0 +1,56 @@
+[
+  {
+    "id": "01",
+    "period": "1771-1862",
+    "title": "Die langsame Erfindung der Sommerfrische",
+    "text": "Hier beginnt die Geschichte nicht mit Laerm, sondern mit Ruhe. Tourismus ist zunaechst ein langsamer Takt, ein Aufenthalt fuer wenige."
+  },
+  {
+    "id": "02",
+    "period": "1860-1890",
+    "title": "Verkehr dreht am Zeitregler",
+    "text": "Mit der Bahn veraendert sich alles. Entfernung wird zur Zeitfrage, und Zeit wird zur Ware."
+  },
+  {
+    "id": "03",
+    "period": "1890-1914",
+    "title": "Die Belle Epoque als Tourismusmaschine",
+    "text": "Hotelpalaeste wachsen wie Signale einer neuen Ordnung. Natur wird nicht nur erlebt, sondern inszeniert und international verkauft."
+  },
+  {
+    "id": "04",
+    "period": "1890-1914",
+    "title": "Hinter dem Glanz",
+    "text": "Der Boom erzeugt Chancen und Belastungen zugleich. Arbeit verdichtet sich, lokale Abhaengigkeiten nehmen zu."
+  },
+  {
+    "id": "05",
+    "period": "Um 1900",
+    "title": "Kritik am Fremdenstrom",
+    "text": "Die Warnungen sind alt. Schon um neunzehnhundert wird von Ueberflutung gesprochen. Die Frage nach Mass und Grenze ist historisch."
+  },
+  {
+    "id": "06",
+    "period": "Meta-Lesehilfe",
+    "title": "Roman Flut als Bruecke",
+    "text": "Die ChatGPT Referenzabfrage funktioniert hier als analytische Bruecke. Sie macht die Motive aus Wiedmers Roman Flut fuer die heutige Overtourism Debatte explizit."
+  },
+  {
+    "id": "07",
+    "period": "1913",
+    "title": "Symboljahr der Mobilitaet",
+    "text": "Mit der neuen Mobilitaet skaliert das System erneut. Was lokal war, wird im Takt der Netze international."
+  },
+  {
+    "id": "08",
+    "period": "Heute",
+    "title": "Overtourism als Muster",
+    "text": "Overtourism ist kein ploetzlicher Unfall. Er ist die beschleunigte Form eines langen historischen Prozesses."
+  },
+  {
+    "id": "09",
+    "period": "Schluss",
+    "title": "Der Kernsatz",
+    "text": "Nicht der Tourismus ist neu. Neu sind Geschwindigkeit und Dichte auf begrenztem Raum."
+  }
+]
