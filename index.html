@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Von der Alpenidylle zur Flut</title>
+    <meta
+      name="description"
+      content="Interaktive Zeitraffer-Erzählung zur Entwicklung des Tourismus im Berner Oberland und den historischen Wurzeln von Overtourism."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <p class="eyebrow">Multimedia-Exposition</p>
+      <h1>Von der Alpenidylle zur Flut</h1>
+      <p class="subtitle">
+        Eine Zeitraffer-Geschichte des Berner Oberlands: Infrastruktur, Hotelboom,
+        frühe Kritik und die Vorgeschichte von Overtourism.
+      </p>
+      <div class="hero-actions">
+        <button id="playTimeline" type="button">Zeitraffer Starten</button>
+        <button id="toggleVoice" type="button" aria-pressed="true">
+          Sprechertext Einblenden
+        </button>
+      </div>
+      <div class="progress-shell" aria-hidden="true">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </header>
+
+    <nav class="chapter-nav" id="chapterNav" aria-label="Kapitel"></nav>
+
+    <main id="story" class="story" aria-live="polite"></main>
+
+    <section class="delivery">
+      <h2>Exportierte Medien</h2>
+      <p>
+        Die Texte sind nun eingesprochen, mit Untertiteln versehen und als MP4
+        exportiert.
+      </p>
+      <div class="delivery-grid">
+        <article>
+          <h3>Rich Version (Szenenbilder + Musikbett)</h3>
+          <video controls preload="metadata" width="100%">
+            <source src="./exports/video/flut-overtourism-rich.mp4" type="video/mp4" />
+            <track
+              kind="subtitles"
+              src="./exports/subtitles/flut-overtourism.de.vtt"
+              srclang="de"
+              label="Deutsch"
+              default
+            />
+          </video>
+          <p>
+            <a href="./exports/video/flut-overtourism-rich.mp4">Rich MP4 herunterladen</a>
+          </p>
+          <p>
+            Alternative:
+            <a href="./exports/video/flut-overtourism.mp4">Basis-MP4 ohne Bildslideshow</a>
+          </p>
+        </article>
+        <article>
+          <h3>Audio und Untertitel separat</h3>
+          <audio controls preload="metadata">
+            <source src="./exports/audio/narration.m4a" type="audio/mp4" />
+          </audio>
+          <p><a href="./exports/audio/narration.m4a">Narration (M4A)</a></p>
+          <p><a href="./exports/audio/music-bed.m4a">Musikbett (M4A)</a></p>
+          <p>
+            <a href="./exports/subtitles/flut-overtourism.de.srt">Untertitel (SRT)</a>
+            |
+            <a href="./exports/subtitles/flut-overtourism.de.vtt">Untertitel (VTT)</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="source-matrix">
+      <h2>Quellenmatrix</h2>
+      <p>
+        Diese Produktion verbindet historische, journalistische, museale und
+        audiovisuelle Quellen zu einer durchgehenden Entwicklungserzählung.
+      </p>
+      <ul id="sourceList"></ul>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Projektdateien: <a href="./sprechertext.md">Sprechertext</a> und
+        <a href="./quellen.md">Quellenhinweise</a>.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
