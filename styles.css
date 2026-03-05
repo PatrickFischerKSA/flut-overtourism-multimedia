@@ -203,6 +203,27 @@ button:hover {
   font-style: italic;
 }
 
+.scene-audio {
+  margin: 0.9rem 0;
+  padding: 0.65rem 0.8rem;
+  border-radius: 12px;
+  background: rgba(15, 127, 137, 0.08);
+  border: 1px solid rgba(15, 127, 137, 0.22);
+}
+
+.scene-audio p {
+  margin: 0 0 0.4rem;
+}
+
+.source-note {
+  margin-top: 0.55rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 10px;
+  background: rgba(204, 90, 43, 0.1);
+  border: 1px solid rgba(204, 90, 43, 0.25);
+  font-size: 0.9rem;
+}
+
 .media-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

@@ -2,43 +2,51 @@ const storyData = [
   {
     period: "1771-1862",
     title: "Die langsame Erfindung der Sommerfrische",
-    beat: "Landschaft als Rückzugsraum",
+    beat: "Landschaft als frühe Tourismusressource",
     narrative:
-      "Rosenlaui steht für einen Tourismus, der über lange Aufenthalte und wenige Gäste funktioniert. Der Ort wird zum Sehnsuchtsraum, noch ohne Massenlogik.",
+      "Rosenlaui steht für die frühe Phase des Alpentourismus: wenige Gäste, lange Aufenthalte, niedriger Durchsatz.",
     voice:
-      "Hier beginnt die Geschichte nicht mit Lärm, sondern mit Ruhe. Tourismus ist zunächst ein langsamer Takt.",
+      "Am Anfang steht kein Massenstrom, sondern ein langsamer Kur- und Sommeraufenthalt. In Rosenlaui werden seit dem späten achtzehnten Jahrhundert Gäste beherbergt. Der Ort funktioniert noch nicht als Durchlaufmaschine, sondern als längerer Rückzugsraum für wenige Besucher. Genau hier entsteht aber ein entscheidender kultureller Schritt: Die alpine Landschaft wird als touristischer Sehnsuchtsraum lesbar und wirtschaftlich verwertbar. Overtourism beginnt historisch nicht erst mit den Massen, sondern mit der Idee, dass Landschaft systematisch in Nachfrage übersetzt werden kann.",
     overtourism:
-      "Der Raum wird bereits touristisch codiert: ein frühes Fundament für spätere Intensivierung.",
+      "Frühe touristische Codierung schafft die Grundlage für spätere Überlastung.",
+    audio: "./exports/audio/01.m4a",
     media: [
       {
         type: "image",
-        src: "https://rosenlaui.ch/cmsfiles/album/eg24167.jpg",
-        caption: "Rosenlaui-Bildmaterial (Quelle: rosenlaui.ch)"
+        src: "./assets/scene-images/scene-01.jpg",
+        caption: "Rosenlaui-Bildmaterial (lokal eingebunden)"
       },
       {
         type: "image",
-        src: "https://rosenlaui.ch/cmsfiles/album/eg24174.jpg",
-        caption: "Historischer Hotelkörper in Rosenlaui (Quelle: rosenlaui.ch)"
+        src: "./assets/scene-images/scene-02.jpg",
+        caption: "Historischer Hotelkörper in Rosenlaui (lokal eingebunden)"
       }
     ],
-    sources: [
-      { label: "Rosenlaui", url: "https://rosenlaui.ch/" }
-    ]
+    sources: [{ label: "Rosenlaui", url: "https://rosenlaui.ch/" }]
   },
   {
     period: "1860-1890",
     title: "Verkehr dreht am Zeitregler",
     beat: "Bahnnetze schrumpfen Distanzen",
     narrative:
-      "Mit dem Ausbau der Eisenbahn kippt die Logik: Aus abgelegen wird erreichbar. Das Berner Oberland rückt in die Reichweite eines internationalen Publikums.",
+      "Mit dem Bahnzeitalter wird aus Entfernung Reisezeit. Das Berner Oberland wird deutlich schneller erreichbar.",
     voice:
-      "Was früher Tagesreisen waren, wird kalkulierbar. Geschwindigkeit erzeugt Nachfrage.",
+      "Zwischen den 1860er- und 1890er-Jahren verschiebt die Verkehrsinfrastruktur die touristische Logik radikal. Mit der Bahn wird aus geographischer Distanz eine planbare Zeitdistanz. Was vorher Reiseaufwand war, wird nun kalkulierbar, buchbar und für neue soziale Gruppen erreichbar. Das Berner Oberland wird damit in internationale Mobilitätsachsen eingebunden. Diese Beschleunigung ist nicht nur technisch, sondern ökonomisch: Je kürzer und verlässlicher die Reise, desto größer die potenzielle Nachfrage. Damit beginnt die erste große Verdichtung, die später zu den für Overtourism typischen Lastspitzen führt.",
     overtourism:
-      "Erreichbarkeit ist der stärkste Treiber für spätere Besucherspitzen.",
-    media: [],
+      "Erreichbarkeit ist ein zentraler Treiber von Besucherdichte.",
+    audio: "./exports/audio/02.m4a",
+    media: [
+      {
+        type: "image",
+        src: "./assets/scene-images/scene-03.jpg",
+        caption: "Alpine Infrastrukturkulisse (lokal eingebunden)"
+      }
+    ],
+    note:
+      "Hinweis: Berner-Zeitung-Artikel sind teilweise Paywall-geschützt; die Kernpunkte sind hier inhaltlich eingearbeitet.",
     sources: [
       {
-        label: "Berner Zeitung: Eisenbahn & Tourismus",
+        label: "Berner Zeitung: Eisenbahn & Tourismus (Paywall)",
         url: "https://www.bernerzeitung.ch/belle-epoque-wie-eisenbahn-den-tourismus-im-berner-oberland-formte-108845008660"
       },
       {
@@ -49,28 +57,34 @@ const storyData = [
   },
   {
     period: "1890-1914",
-    title: "Die Belle Epoque als Tourismusmaschine",
-    beat: "Hotelpalaste, Kapital, Glamour",
+    title: "Die Belle Époque als Tourismusmaschine",
+    beat: "Hotelpaläste, Kapital, Image",
     narrative:
-      "Grandhotels entstehen im schnellen Takt. Architektur wird zum Marketinginstrument, das aus Landschaft ein international verkauftes Erlebnis macht.",
+      "Grandhotels, Promenaden und starke internationale Vermarktung formen ein skaliertes Tourismusmodell.",
     voice:
-      "Die Palaste versprechen Natur und Luxus zugleich. Das Angebot produziert den Markt, nicht nur umgekehrt.",
+      "In der Belle Époque entsteht aus Tourismus ein systemisches Wirtschaftsmodell. Hotelpaläste, Promenaden und Aussichtsinfrastrukturen werden zu einer orchestrierten Erlebnisarchitektur. Laut MFK steigt die Zahl der Hotels im Berner Oberland von rund achtzig um 1850 auf rund vierhundert bis 1914, gleichzeitig wachsen die Gästezahlen massiv. Die Landschaft wird dabei nicht nur besucht, sondern inszeniert und global vermarktet. Das Zusammenspiel aus Kapital, Image und Erreichbarkeit erzeugt einen selbstverstärkenden Boom. Genau dieses Zusammenspiel gilt bis heute als Kernmechanismus jeder Overtourism-Dynamik.",
     overtourism:
-      "Sobald Infrastruktur, Bettenkapazitat und Image zusammenspielen, skaliert das System nach oben.",
+      "Wenn Bettenkapazität, Kapital und Sichtbarkeit zusammenwirken, skaliert Nachfrage schneller als lokale Steuerung.",
+    audio: "./exports/audio/03.m4a",
     media: [
+      {
+        type: "image",
+        src: "./assets/scene-images/scene-04.jpg",
+        caption: "Belle-Époque-Anmutung im Alpenraum (lokal eingebunden)"
+      },
       {
         type: "embed",
         src: "https://www.youtube-nocookie.com/embed/sLW3yBXOxgw",
-        caption: "Schweizer Hotelgeschichten: Schlosser der Belle Epoque"
+        caption: "Schweizer Hotelgeschichten: Schlösser der Belle Époque"
       }
     ],
     sources: [
       {
-        label: "Swissinfo: Hotelpalaste",
+        label: "Swissinfo: Hotelpaläste",
         url: "https://www.swissinfo.ch/ger/kultur/hotelpalaeste-zwischen-kunst-kitsch-und-kommerz/3714356"
       },
       {
-        label: "MFK-Blog: Hotelpalaste im Alpenland",
+        label: "MFK-Blog: Hotelpaläste im Alpenland",
         url: "https://www.mfk.ch/austauschen/blog/hotelpalaeste-im-alpenland"
       },
       {
@@ -84,19 +98,28 @@ const storyData = [
     title: "Hinter dem Glanz: Arbeit und soziale Reibung",
     beat: "Gewinn verteilt sich ungleich",
     narrative:
-      "Mit dem Boom entstehen nicht nur Chancen, sondern auch harte Arbeitsrealitaten, soziale Abhangigkeiten und Konflikte um lokale Kontrolle.",
+      "Der Boom steigert Einkommen, erzeugt aber gleichzeitig neue soziale Hierarchien und lokale Abhängigkeiten.",
     voice:
-      "Der Tourismus verspricht Wohlstand, aber er organisiert auch neue Hierarchien im Alltag.",
+      "Der Aufstieg bringt nicht nur Glanz, sondern auch soziale Kosten. Hinter den Fassaden verdichten sich Dienstleistungsarbeit, saisonale Abhängigkeiten und ungleiche Gewinnverteilungen. Lokale Bevölkerungen erleben den Umbau von Dorfstrukturen zu tourismuszentrierten Ökonomien oft als Ambivalenz: neue Einkommen, aber auch neue Hierarchien und Kontrollverluste. Genau diese Spannung ist entscheidend für den historischen Blick auf Overtourism. Das Problem liegt nicht nur in Besucherzahlen, sondern in der Frage, wer über Raum, Zeit und Wertschöpfung entscheidet.",
     overtourism:
-      "Overtourism zeigt sich fruh als Belastungsfrage fur Arbeit, Wohnen und lokale Selbstbestimmung.",
-    media: [],
+      "Overtourism ist auch eine Verteilungsfrage: Wer trägt die Last, wer erhält den Nutzen?",
+    audio: "./exports/audio/04.m4a",
+    media: [
+      {
+        type: "image",
+        src: "./assets/scene-images/scene-05.jpg",
+        caption: "Hotelalltag und Infrastrukturraum (lokal eingebunden)"
+      }
+    ],
+    note:
+      "Hinweis: Berner-Zeitung-Artikel sind teilweise Paywall-geschützt; die Kernpunkte sind hier inhaltlich eingearbeitet.",
     sources: [
       {
-        label: "Berner Zeitung: Belle Epoque Bildwelt",
+        label: "Berner Zeitung: Belle Epoque Bildwelt (Paywall/teils frei)",
         url: "https://www.bernerzeitung.ch/berner-oberland-so-sah-es-in-der-belle-epoque-wirklich-aus-396126969641"
       },
       {
-        label: "Berner Zeitung: Eisenbahn & Tourismus",
+        label: "Berner Zeitung: Eisenbahn & Tourismus (Paywall)",
         url: "https://www.bernerzeitung.ch/belle-epoque-wie-eisenbahn-den-tourismus-im-berner-oberland-formte-108845008660"
       }
     ]
@@ -104,14 +127,21 @@ const storyData = [
   {
     period: "Um 1900",
     title: "Kritik am Fremdenstrom wird sichtbar",
-    beat: "Uberflutung als zeitgenossischer Begriff",
+    beat: "Überflutung als zeitgenössischer Begriff",
     narrative:
-      "Um 1900 formiert sich eine deutliche Tourismuskritik. Zentral ist die Erfahrung, dass Tempo, Dichte und Profitdruck den lokalen Lebensrhythmus uberrollen.",
+      "Tourismuskritik um 1900 benennt bereits Verdichtung, Überfremdungsängste und Kontrollverlust.",
     voice:
-      "Overtourism ist kein neues Wort, aber ein altes Problem. Schon damals wird die Uberflutung beschrieben.",
+      "Um 1900 wird die Kritik am Fremdenstrom deutlich artikuliert. Zeitgenössische Stimmen sprechen bereits von Überflutung, von Veränderungen des Alltagsrhythmus und von kultureller Überformung durch den Tourismusbetrieb. Damit wird klar: Die Gegenwartsdebatte über Overtourism ist keine neue Erfindung, sondern hat eine lange Vorgeschichte. Historisch wiederholt sich ein Muster: Infrastruktur und Vermarktung steigern Nachfrage schneller, als lokale Systeme soziale und räumliche Grenzen neu austarieren können.",
     overtourism:
-      "Die Gegenwartsdebatte hat eine lange Vorgeschichte und damit auch historisch erprobte Gegenargumente.",
-    media: [],
+      "Die heutige Debatte hat historische Tiefenschärfe: Problemstrukturen sind seit über 100 Jahren erkennbar.",
+    audio: "./exports/audio/05.m4a",
+    media: [
+      {
+        type: "image",
+        src: "./assets/scene-images/scene-06.jpg",
+        caption: "Verdichteter Alpenraum im Bild (lokal eingebunden)"
+      }
+    ],
     sources: [
       {
         label: "Swissinfo: Tourismuskritik um 1900",
@@ -125,18 +155,25 @@ const storyData = [
   },
   {
     period: "Meta-Lesehilfe",
-    title: "Roman-Flut als Interpretationsbrucke",
+    title: "Roman „Flut“ als Interpretationsbrücke",
     beat: "Literarische Diagnose trifft Gegenwartsbegriff",
     narrative:
-      "Die ChatGPT-Abfrage dient als Begleitfolie: Sie verdichtet Motive aus Jakob Wiedmers Roman Flut und ubersetzt sie in den heutigen Overtourism-Rahmen.",
+      "Wiedmers Roman und die ergänzende ChatGPT-Analyse zeigen denselben Kern: Beschleunigung kann in Überlastung kippen.",
     voice:
-      "Der Roman zeigt Beschleunigung als soziale Kraft. Die Analyse macht diese Struktur fur die Gegenwart lesbar.",
+      "Jakob Wiedmers Roman Flut verdichtet die historische Erfahrung literarisch: Die Flut meint Fortschritt, Geld und Mobilität, aber zugleich Überforderung, soziale Reibung und Kontrollverlust. In der hier verlinkten ChatGPT-Referenz wird diese Struktur als interpretative Brücke in die heutige Sprache des Overtourism übersetzt. Entscheidend ist dabei nicht ein einzelnes Zitat, sondern das Muster: Wenn touristische Beschleunigung schneller wirkt als lokale Steuerung, kippt ein Erfolgsmodell in ein Belastungsregime.",
     overtourism:
-      "Die Referenz liefert die argumentative Brucke zwischen historischer Kritik und heutiger Steuerungsfrage.",
-    media: [],
+      "Die Romanreferenz verbindet historische Wahrnehmung mit heutiger Steuerungslogik.",
+    audio: "./exports/audio/06.m4a",
+    media: [
+      {
+        type: "image",
+        src: "./assets/scene-images/scene-07.jpg",
+        caption: "Visuelle Brücke zwischen Geschichte und Gegenwart (lokal eingebunden)"
+      }
+    ],
     sources: [
       {
-        label: "ChatGPT-Referenzgesprach",
+        label: "ChatGPT-Referenzgespräch",
         url: "https://chatgpt.com/c/69a9a5f0-2690-8386-826c-35416054d3c7"
       },
       {
@@ -147,28 +184,36 @@ const storyData = [
   },
   {
     period: "1913",
-    title: "Symboljahr der Mobilitat",
-    beat: "Lotschberg und neue Bewegungsdynamik",
+    title: "Symboljahr der Mobilität",
+    beat: "Lötschberg und neuer Takt",
     narrative:
-      "Mit der Lotschberg-Verbindung wird der touristische Raum neu skaliert. Der Wechsel von Postkutsche zur Schiene steht fur den Systemsprung.",
+      "Neue Netzverbindungen erhöhen die internationale Anbindung und verstärken touristische Skaleneffekte.",
     voice:
-      "Mobilitat wird zur Infrastruktur des Massenbesuchs. Die Schwelle zum Hochdrucktourismus ist erreicht.",
+      "Das Jahr 1913 steht symbolisch für den nächsten Skalierungssprung. Mit der Lötschberg-Anbindung verdichtet sich die internationale Erreichbarkeit weiter, traditionelle Mobilitätsformen verlieren an Bedeutung, und die touristische Taktrate steigt erneut. Diese Entwicklung zeigt, wie stark Infrastrukturpolitik in touristische Raumordnungen eingreift. Aus historischer Perspektive ist das zentral: Overtourism ist nicht nur ein Marketingeffekt, sondern auch das Ergebnis von Netzentscheidungen, die Besucherströme dauerhaft neu verteilen.",
     overtourism:
-      "Mehr Kapazitat ohne Steuerung erzeugt wiederkehrende Uberlastungsmuster.",
+      "Infrastrukturentscheidungen wirken langfristig auf Besucherströme und lokale Belastung.",
+    audio: "./exports/audio/07.m4a",
     media: [
+      {
+        type: "image",
+        src: "./assets/scene-images/scene-08.jpg",
+        caption: "Mobilitätsraum im Berner Oberland (lokal eingebunden)"
+      },
       {
         type: "embed",
         src: "https://www.youtube-nocookie.com/embed/TCL9zRvNgo0",
         caption: "Belle Epoque Kandersteg 2013"
       }
     ],
+    note:
+      "Hinweis: Berner-Zeitung-Artikel sind teilweise Paywall-geschützt; die Kernpunkte sind hier inhaltlich eingearbeitet.",
     sources: [
       {
         label: "YouTube: Belle Epoque Kandersteg",
         url: "https://www.youtube.com/watch?v=TCL9zRvNgo0"
       },
       {
-        label: "Berner Zeitung: Belle Epoque Bildwelt",
+        label: "Berner Zeitung: Belle Epoque Bildwelt (Paywall/teils frei)",
         url: "https://www.bernerzeitung.ch/berner-oberland-so-sah-es-in-der-belle-epoque-wirklich-aus-396126969641"
       }
     ]
@@ -178,15 +223,40 @@ const storyData = [
     title: "Overtourism als wiederkehrendes Muster",
     beat: "Nicht neu, aber schneller und dichter",
     narrative:
-      "Die Gegenwart ist kein Bruch, sondern eine Zuspitzung: Erreichbarkeit, Vermarktung und Aufmerksamkeit laufen auf begrenzten Raum auf.",
+      "Die Gegenwart ist kein Bruch, sondern eine Zuspitzung historischer Mechanismen.",
     voice:
-      "Die Kernfrage lautet nicht ob Tourismus, sondern wie viel, wann und fur wen.",
+      "Heute erscheint Overtourism oft als plötzliche Krise, historisch ist er aber die beschleunigte Form eines langen Prozesses. Erreichbarkeit, Sichtbarkeit und Plattformlogiken treffen auf begrenzte räumliche und soziale Kapazitäten. Deshalb reicht es nicht, nur Besucherzahlen zu zählen. Entscheidend sind Taktung, Verteilung, saisonale Spitzen und lokale Wertschöpfung. Die historische Perspektive aus dem Berner Oberland zeigt, dass Gegenmaßnahmen nur dann wirken, wenn sie Infrastruktur, Angebotsdesign und Gemeinwohlregeln zusammendenken.",
     overtourism:
-      "Steuerung uber Kapazitaten, Saison-Entzerrung und lokale Wertschopfung wird zum politischen Zentrum.",
-    media: [],
-    sources: [
-      { label: "Synthese aus allen Quellen", url: "./quellen.md" }
-    ]
+      "Wirksam wird Steuerung nur als Kombination aus Kapazitätsmanagement, Entzerrung und lokaler Wertschöpfung.",
+    audio: "./exports/audio/08.m4a",
+    media: [
+      {
+        type: "image",
+        src: "./assets/scene-images/scene-09.jpg",
+        caption: "Gegenwartsbild des alpinen Tourismusraums (lokal eingebunden)"
+      }
+    ],
+    sources: [{ label: "Synthese aus allen Quellen", url: "./quellen.md" }]
+  },
+  {
+    period: "Schluss",
+    title: "Vom Befund zur Steuerung",
+    beat: "Historische Erkenntnis als Handlungsvorlage",
+    narrative:
+      "Die Geschichte der „Flut“ endet nicht in Nostalgie, sondern in konkreten Steuerungsfragen für Gegenwart und Zukunft.",
+    voice:
+      "Der Schluss ist programmatisch: Nicht der Tourismus ist neu, neu sind Geschwindigkeit, Dichte und die technische Reichweite der Nachfrage. Deshalb braucht es keine einfache Tourismuskritik, sondern präzise Steuerung. Historische Einsicht heißt hier praktische Konsequenz: Kapazitätsmanagement, Entzerrung über das Jahr, faire lokale Wertschöpfung und klare Schutzregeln für besonders sensible Orte. Genau so wird aus der Geschichte der Flut kein nostalgischer Rückblick, sondern ein handlungsfähiger Rahmen für die Gegenwart.",
+    overtourism:
+      "Ziel ist nicht „weniger Geschichte“, sondern bessere Governance im Heute.",
+    audio: "./exports/audio/09.m4a",
+    media: [
+      {
+        type: "image",
+        src: "./assets/scene-images/scene-02.jpg",
+        caption: "Rosenlaui als Kontinuitätsmotiv (lokal eingebunden)"
+      }
+    ],
+    sources: [{ label: "Projektfazit", url: "./quellen.md" }]
   }
 ];
 
@@ -249,6 +319,18 @@ function createScene(scene, idx) {
     ? `<div class="media-grid">${scene.media.map(mediaMarkup).join("")}</div>`
     : "";
 
+  const audioHtml = scene.audio
+    ? `
+      <div class="scene-audio">
+        <p><strong>Eingesprochen:</strong> Kapitel-Audio</p>
+        <audio controls preload="none">
+          <source src="${scene.audio}" type="audio/mp4" />
+        </audio>
+      </div>`
+    : "";
+
+  const noteHtml = scene.note ? `<p class="source-note">${scene.note}</p>` : "";
+
   article.innerHTML = `
     <section class="scene-meta">
       <p class="period">${scene.period}</p>
@@ -257,8 +339,10 @@ function createScene(scene, idx) {
     </section>
     <section class="scene-content">
       <p>${scene.narrative}</p>
-      <p class="voice">Sprechertext: ${scene.voice}</p>
-      <p><strong>Overtourism-Bruecke:</strong> ${scene.overtourism}</p>
+      <p class="voice"><strong>Sprechertext:</strong> ${scene.voice}</p>
+      ${audioHtml}
+      <p><strong>Overtourism-Brücke:</strong> ${scene.overtourism}</p>
+      ${noteHtml}
       ${mediaHtml}
       <ul class="sources">${sources}</ul>
     </section>
@@ -344,7 +428,7 @@ function startAutoPlay() {
       return;
     }
     goToScene(autoPlayIndex, true);
-  }, 7000);
+  }, 9000);
 }
 
 function toggleVoice() {

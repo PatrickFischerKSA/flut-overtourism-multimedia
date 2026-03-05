@@ -4,6 +4,7 @@
 Dieses Paket enthaelt:
 - Interaktive Story-Seite (`index.html`)
 - Gesprochene Narration (`exports/audio/narration.m4a`)
+- Kapitel-Audios (`exports/audio/01.m4a` bis `09.m4a`)
 - Musikbett (`exports/audio/music-bed.m4a`)
 - Untertitel (`exports/subtitles/flut-overtourism.de.srt` und `.vtt`)
 - Finale MP4 (`exports/video/flut-overtourism.mp4`)

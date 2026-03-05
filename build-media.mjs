@@ -125,18 +125,31 @@ ensureCommandExists("say");
 const ffmpegPath = getFfmpegPath();
 
 const segmentFiles = [];
+const segmentAudioFiles = [];
 const timings = [];
 
 let cursor = 0;
 for (const chapter of chapters) {
   const segmentPath = path.join(audioDir, `${chapter.id}.aiff`);
+  const segmentM4aPath = path.join(audioDir, `${chapter.id}.m4a`);
   sayToAiff(chapter.text, segmentPath);
+  runSpawnOrThrow(ffmpegPath, [
+    "-y",
+    "-i",
+    segmentPath,
+    "-c:a",
+    "aac",
+    "-b:a",
+    "128k",
+    segmentM4aPath
+  ]);
   const duration = getDurationSeconds(ffmpegPath, segmentPath);
   const start = cursor;
   const end = cursor + duration;
   cursor = end;
 
   segmentFiles.push(segmentPath);
+  segmentAudioFiles.push(segmentM4aPath);
   timings.push({
     ...chapter,
     duration,
@@ -245,6 +258,10 @@ const manifest = {
     srt: path.relative(projectDir, srtPath),
     vtt: path.relative(projectDir, vttPath)
   },
+  chapterAudio: segmentAudioFiles.map((file, idx) => ({
+    id: chapters[idx].id,
+    file: path.relative(projectDir, file)
+  })),
   video: path.relative(projectDir, finalVideoPath),
   durationSeconds: Number(totalDuration.toFixed(2)),
   chapters: timings.map((t) => ({
@@ -264,6 +281,7 @@ writeFileSync(
 
 console.log("Medienexport fertig:");
 console.log(`- Audio: ${manifest.narration}`);
+console.log(`- Kapitel-Audios: ${manifest.chapterAudio.length} Dateien`);
 console.log(`- Untertitel SRT: ${manifest.subtitles.srt}`);
 console.log(`- Untertitel VTT: ${manifest.subtitles.vtt}`);
 console.log(`- Video: ${manifest.video}`);
