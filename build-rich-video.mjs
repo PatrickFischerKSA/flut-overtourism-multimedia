@@ -7,7 +7,6 @@ const projectDir = process.cwd();
 const exportsDir = path.join(projectDir, "exports");
 const videoDir = path.join(exportsDir, "video");
 const audioDir = path.join(exportsDir, "audio");
-const subtitleDir = path.join(exportsDir, "subtitles");
 const imagesDir = path.join(projectDir, "assets", "scene-images");
 
 mkdirSync(videoDir, { recursive: true });
@@ -15,13 +14,12 @@ mkdirSync(audioDir, { recursive: true });
 
 const manifestPath = path.join(exportsDir, "manifest.json");
 const narrationPath = path.join(audioDir, "narration.m4a");
-const srtPath = path.join(subtitleDir, "flut-overtourism.de.srt");
 
 if (!existsSync(manifestPath)) {
   throw new Error("manifest.json fehlt. Bitte zuerst: node build-media.mjs");
 }
-if (!existsSync(narrationPath) || !existsSync(srtPath)) {
-  throw new Error("Audio oder Untertitel fehlen. Bitte zuerst: node build-media.mjs");
+if (!existsSync(narrationPath)) {
+  throw new Error("Audio fehlt. Bitte zuerst: node build-media.mjs");
 }
 if (!existsSync(imagesDir)) {
   throw new Error("assets/scene-images fehlt.");
@@ -165,11 +163,10 @@ const heading = escText("Von der Alpenidylle zur Flut");
 const videoFilter = [
   "scale=1920:1080,format=yuv420p",
   `drawtext=fontfile=/System/Library/Fonts/Supplemental/Arial.ttf:text='${heading}':fontsize=56:fontcolor=#f8e8b0:x=(w-text_w)/2:y=980`,
-  ...chapterDraws,
-  "subtitles=exports/subtitles/flut-overtourism.de.srt:force_style='FontName=Arial,FontSize=33,PrimaryColour=&H00FFFFFF,OutlineColour=&H00202020,BorderStyle=1,Outline=2,Shadow=0,MarginV=46'"
+  ...chapterDraws
 ].join(",");
 
-const richTempPath = path.join(videoDir, "flut-overtourism-rich-temp.mp4");
+const richFinalPath = path.join(videoDir, "flut-overtourism-rich.mp4");
 runOrThrow(ffmpeg, [
   "-y",
   "-i",
@@ -193,24 +190,6 @@ runOrThrow(ffmpeg, [
   "-b:a",
   "192k",
   "-shortest",
-  richTempPath
-]);
-
-const richFinalPath = path.join(videoDir, "flut-overtourism-rich.mp4");
-runOrThrow(ffmpeg, [
-  "-y",
-  "-i",
-  richTempPath,
-  "-i",
-  srtPath,
-  "-c:v",
-  "copy",
-  "-c:a",
-  "copy",
-  "-c:s",
-  "mov_text",
-  "-metadata:s:s:0",
-  "language=deu",
   richFinalPath
 ]);
 
