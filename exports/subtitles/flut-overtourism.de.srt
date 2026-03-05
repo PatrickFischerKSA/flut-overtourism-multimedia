@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:07,820
+1771-1862: Hier beginnt die Geschichte nicht mit Laerm, sondern mit Ruhe. Tourismus ist zunaechst ein langsamer Takt, ein Aufenthalt fuer wenige.
+
+2
+00:00:07,820 --> 00:00:13,200
+1860-1890: Mit der Bahn veraendert sich alles. Entfernung wird zur Zeitfrage, und Zeit wird zur Ware.
+
+3
+00:00:13,200 --> 00:00:21,590
+1890-1914: Hotelpalaeste wachsen wie Signale einer neuen Ordnung. Natur wird nicht nur erlebt, sondern inszeniert und international verkauft.
+
+4
+00:00:21,590 --> 00:00:28,540
+1890-1914: Der Boom erzeugt Chancen und Belastungen zugleich. Arbeit verdichtet sich, lokale Abhaengigkeiten nehmen zu.
+
+5
+00:00:28,540 --> 00:00:36,400
+Um 1900: Die Warnungen sind alt. Schon um neunzehnhundert wird von Ueberflutung gesprochen. Die Frage nach Mass und Grenze ist historisch.
+
+6
+00:00:36,400 --> 00:00:46,880
+Meta-Lesehilfe: Die ChatGPT Referenzabfrage funktioniert hier als analytische Bruecke. Sie macht die Motive aus Wiedmers Roman Flut fuer die heutige Overtourism Debatte explizit.
+
+7
+00:00:46,880 --> 00:00:53,530
+1913: Mit der neuen Mobilitaet skaliert das System erneut. Was lokal war, wird im Takt der Netze international.
+
+8
+00:00:53,530 --> 00:01:00,010
+Heute: Overtourism ist kein ploetzlicher Unfall. Er ist die beschleunigte Form eines langen historischen Prozesses.
+
+9
+00:01:00,010 --> 00:01:05,150
+Schluss: Nicht der Tourismus ist neu. Neu sind Geschwindigkeit und Dichte auf begrenztem Raum.
