@@ -1,0 +1,19 @@
+file '/Users/patrickfischer/Documents/New project/flut-overtourism-multimedia/assets/scene-images/scene-01.jpg'
+duration 7.82
+file '/Users/patrickfischer/Documents/New project/flut-overtourism-multimedia/assets/scene-images/scene-02.jpg'
+duration 5.38
+file '/Users/patrickfischer/Documents/New project/flut-overtourism-multimedia/assets/scene-images/scene-03.jpg'
+duration 8.39
+file '/Users/patrickfischer/Documents/New project/flut-overtourism-multimedia/assets/scene-images/scene-04.jpg'
+duration 6.95
+file '/Users/patrickfischer/Documents/New project/flut-overtourism-multimedia/assets/scene-images/scene-05.jpg'
+duration 7.86
+file '/Users/patrickfischer/Documents/New project/flut-overtourism-multimedia/assets/scene-images/scene-06.jpg'
+duration 10.48
+file '/Users/patrickfischer/Documents/New project/flut-overtourism-multimedia/assets/scene-images/scene-07.jpg'
+duration 6.65
+file '/Users/patrickfischer/Documents/New project/flut-overtourism-multimedia/assets/scene-images/scene-08.jpg'
+duration 6.48
+file '/Users/patrickfischer/Documents/New project/flut-overtourism-multimedia/assets/scene-images/scene-09.jpg'
+duration 5.14
+file '/Users/patrickfischer/Documents/New project/flut-overtourism-multimedia/assets/scene-images/scene-09.jpg'
