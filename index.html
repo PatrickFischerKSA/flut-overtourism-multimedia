@@ -3,95 +3,303 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Von der Alpenidylle zur Flut</title>
+    <title>Overtourism Lernreise: Flut, Enzensberger, Groebner</title>
     <meta
       name="description"
-      content="Interaktive Zeitraffer-Erzählung zur Entwicklung des Tourismus im Berner Oberland und den historischen Wurzeln von Overtourism."
+      content="Dramaturgisch choreografierte Lernlandschaft zu Overtourism als Reise mit Raststaetten, Selfies, Begegnungen und intellektuellem Reiseblog."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <video class="bg-video" autoplay muted loop playsinline aria-hidden="true">
+      <source src="./assets/SwissTourismus.mp4" type="video/mp4" />
+    </video>
+    <div class="bg-overlay" aria-hidden="true"></div>
+
     <header class="hero" id="top">
-      <p class="eyebrow">Multimedia-Exposition</p>
-      <h1>Von der Alpenidylle zur Flut</h1>
-      <p class="subtitle">
-        Eine Zeitraffer-Geschichte des Berner Oberlands: Infrastruktur, Hotelboom,
-        frühe Kritik und die Vorgeschichte von Overtourism.
+      <p class="eyebrow">Reflexionseinheit Overtourism</p>
+      <h1>Reiseroute in die Widersprueche des Reisens</h1>
+      <p class="lead">
+        Diese Lernlandschaft ist selbst als Reise gebaut: mit Raststaetten,
+        Selfie-Punkten, fluechtigen Begegnungen und langen Rueckfahrten in die
+        Primaertexte. Zentrum ist Enzensbergers Paradoxon: Der Tourist zerstoert,
+        indem er findet, was er sucht.
       </p>
       <div class="hero-actions">
-        <button id="playTimeline" type="button">Zeitraffer Starten</button>
-        <button id="toggleVoice" type="button" aria-pressed="true">
-          Sprechertext Einblenden
-        </button>
+        <a class="button" href="#route">Reise starten</a>
+        <a class="button button-light" href="#blog">Zum Reiseblog</a>
       </div>
-      <div class="progress-shell" aria-hidden="true">
-        <div class="progress-bar" id="progressBar"></div>
-      </div>
+      <p class="hero-meta">
+        Geeignet fuer Praesenz, Hybrid und Distance Learning |
+        Wiederholte Textbesuche explizit eingeplant
+      </p>
     </header>
 
-    <nav class="chapter-nav" id="chapterNav" aria-label="Kapitel"></nav>
+    <main>
+      <section class="panel" id="hook">
+        <p class="section-kicker">Aufhaenger</p>
+        <h2>Traumreise kippt: Abu Dhabi als Sofortdiagnose</h2>
+        <div class="split">
+          <article class="card">
+            <h3>Blick-Video</h3>
+            <p>
+              <a
+                href="https://www.blick.ch/people-tv/schweiz/stefan-buesser-sitzt-in-abu-dhabi-fest-die-druckwellen-fahren-einem-schon-ziemlich-ein-id21742969.html"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Stefan Buesser sitzt in Abu Dhabi fest
+              </a>
+            </p>
+            <p>
+              Einstiegsthese: Das Risiko der Reise ist nicht nur ein Unfall,
+              sondern Teil einer beschleunigten Tourismuslogik.
+            </p>
+          </article>
+          <article class="card intense">
+            <h3>Schockfragen fuer den Einstieg</h3>
+            <ol>
+              <li>Wer traegt Kosten und wer bleibt unsichtbar?</li>
+              <li>Was wirkt wie Freiheit, fuehlt sich aber wie Kontrollverlust an?</li>
+              <li>Welche Rolle spielt unser eigener Wunsch nach "Auszeit"?</li>
+            </ol>
+          </article>
+        </div>
+      </section>
 
-    <main id="story" class="story" aria-live="polite"></main>
+      <section class="panel" id="route">
+        <p class="section-kicker">Dramaturgie</p>
+        <h2>Mehrere Reiserouten fuer unterschiedliche Lernsettings</h2>
+        <p>
+          Waehle eine Route und steuere die Etappen selbst: Jede Station hat
+          Lektuereauftrag, Streitfrage, Begegnungsformat und Blogauftrag.
+        </p>
+        <div id="routeTracks" class="route-tracks" role="tablist" aria-label="Reiserouten"></div>
+        <p id="routeMeta" class="prompt"></p>
+        <div class="route-shell">
+          <div id="routeNav" class="route-nav" role="tablist" aria-label="Reisestationen"></div>
+          <article class="route-detail" id="routeDetail" aria-live="polite"></article>
+        </div>
+      </section>
 
-    <section class="delivery">
-      <h2>Exportierte Medien</h2>
-      <p>
-        Die Texte sind eingesprochen und als MP4 exportiert.
-      </p>
-      <div class="delivery-grid">
-        <article>
-          <h3>Rich Version (Szenenbilder + Musikbett)</h3>
-          <video controls preload="metadata" width="100%">
-            <source src="./exports/video/flut-overtourism-rich.mp4" type="video/mp4" />
-          </video>
-          <p>
-            <a href="./exports/video/flut-overtourism-rich.mp4">Rich MP4 herunterladen</a>
-          </p>
-          <p>
-            Alternative:
-            <a href="./exports/video/flut-overtourism.mp4">Basis-MP4 ohne Bildslideshow</a>
-          </p>
-        </article>
-        <article>
-          <h3>Audio und Untertitel separat</h3>
-          <audio controls preload="metadata">
-            <source src="./exports/audio/narration.m4a" type="audio/mp4" />
-          </audio>
-          <p><a href="./exports/audio/narration.m4a">Narration (M4A)</a></p>
-          <p><a href="./exports/audio/music-bed.m4a">Musikbett (M4A)</a></p>
-          <p>
-            <a href="./exports/subtitles/flut-overtourism.de.srt">Untertitel (SRT)</a>
-            |
-            <a href="./exports/subtitles/flut-overtourism.de.vtt">Untertitel (VTT)</a>
-          </p>
-        </article>
-      </div>
-    </section>
+      <section class="panel" id="paradox">
+        <p class="section-kicker">Paradoxon-Labor</p>
+        <h2>Enzensberger zugespitzt: Finden zerstoert das Gesuchte</h2>
+        <div class="triple">
+          <article class="card">
+            <h3>Sehnsucht</h3>
+            <p>
+              Touristisches Begehren richtet sich auf Ferne, Ruhe, Urspruenglichkeit,
+              Authentizitaet.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Stress</h3>
+            <p>
+              Anfahrt, Taktung, Buchungsdruck, Sichtbarkeitszwang und
+              Erlebnispflicht erzeugen neue Unruhe statt Erholung.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Zerstoerung</h3>
+            <p>
+              Gerade die gesuchte Idylle wird durch ihre massenhafte Suche in
+              Geschaeftigkeit, Preisdruck und Umweltlast verwandelt.
+            </p>
+          </article>
+        </div>
+        <div class="console">
+          <button type="button" id="thesisBtn">Paradoxon-These ziehen</button>
+          <button type="button" id="counterBtn">Gegenargument ziehen</button>
+          <p class="prompt" id="thesisText"></p>
+          <p class="prompt alt" id="counterText"></p>
+        </div>
+      </section>
 
-    <section class="source-matrix">
-      <h2>Quellenmatrix</h2>
-      <p>
-        Diese Produktion verbindet historische, journalistische, museale und
-        audiovisuelle Quellen zu einer durchgehenden Entwicklungserzählung.
-        Paywall-Quellen sind markiert; ihre zentralen Befunde sind als
-        Paraphrase in den Langtext integriert.
-      </p>
-      <ul id="sourceList"></ul>
-    </section>
+      <section class="panel" id="groebner">
+        <p class="section-kicker">Textarbeit vertieft</p>
+        <h2>Groebner im Fokus: Abgefahren (Kap. 4-7) + Ferienmuede</h2>
+        <div class="deep-grid">
+          <article class="card">
+            <h3>Kapitel 4 - Alpen autokinetisch</h3>
+            <p>
+              Mobilitaet als Selbststeigerung: Geschwindigkeit, Sportlichkeit,
+              Bildproduktion und Beschleunigung formen die Alpen als Maschine.
+            </p>
+            <p class="mini">Korrespondenz zu Stagen in <em>Flut</em>: Infrastruktur erzeugt neue Rhythmen und soziale Verschiebungen.</p>
+          </article>
+          <article class="card">
+            <h3>Kapitel 5 - Hyperdorf</h3>
+            <p>
+              Das Dorf wird als kontrollierte Wunschkulisse neu gebaut: alt wirkend,
+              hoch technisiert, global beworben, lokal entmischt.
+            </p>
+            <p class="mini">Korrespondenz: Stagen wird vom Lebensraum zum touristischen Arrangement.</p>
+          </article>
+          <article class="card">
+            <h3>Kapitel 6 - Erfuellung in der Leere</h3>
+            <p>
+              Die Suche nach Leere braucht Geraete, Navigation und Infrastruktur.
+              Das Verlangen nach Ruhe produziert Bewegung und Druck.
+            </p>
+            <p class="mini">Korrespondenz: "Flut" als Metapher fuer genau diese Uebersteuerung.</p>
+          </article>
+          <article class="card">
+            <h3>Kapitel 7 - Zeitreisen</h3>
+            <p>
+              Tourismus verkauft Vergangenheit als konsumierbare Gegenwart.
+              Beschleunigung und Nostalgie sind keine Gegensaetze, sondern Partner.
+            </p>
+            <p class="mini">Korrespondenz: vermeintliche Bewahrung fuehrt zu neuer Ueberformung.</p>
+          </article>
+          <article class="card highlight">
+            <h3>Ferienmuede: Wenn Reisen nicht mehr hilft</h3>
+            <p>
+              Groebner beschreibt Ferien als Wiederholungsschleife: Sehnsucht,
+              Entlastungserwartung, Stress, Enttaeuschung, neuer Aufbruch.
+            </p>
+            <ul>
+              <li>"Ich bin offenbar nicht sehr frei, wenn ich frei habe."</li>
+              <li>Ruhewunsch und Bewegungszwang laufen gleichzeitig.</li>
+              <li>Reisen konserviert oft den Alltag statt ihn zu veraendern.</li>
+            </ul>
+          </article>
+          <article class="card highlight">
+            <h3>Primartext-Loop (3 Runden)</h3>
+            <ol>
+              <li>Runde 1: Markieren (Begriffe, Metaphern, Taktwoerter).</li>
+              <li>Runde 2: Gegeneinander lesen (Enzensberger/Groebner/Wiedmer).</li>
+              <li>Runde 3: Uebertragen auf eigenes Reiseverhalten.</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="encounters">
+        <p class="section-kicker">Begegnungen</p>
+        <h2>Wie fluechtige Reisebekanntschaften: Denkabende und Co-Travel</h2>
+        <p>
+          Tauscht fuer einen Abend oder mehrere Etappen eure Perspektive.
+          Simuliert Reisegespraeche mit Fremden: kurz, intensiv, widerspruechlich.
+        </p>
+        <div class="split">
+          <article class="card">
+            <h3>Begegnungsgenerator</h3>
+            <button type="button" id="encounterBtn">Neue Begegnung</button>
+            <p id="encounterText" class="prompt"></p>
+          </article>
+          <article class="card">
+            <h3>Duo-/Trio-Protokoll</h3>
+            <ul>
+              <li>Jede Person spricht zuerst nur aus ihrer Rolle.</li>
+              <li>Andere spiegeln, wo Sehnsucht in Stress kippt.</li>
+              <li>Gemeinsamer Satz fuer den Reiseblog: "Wir wollten ..., wir erzeugten ..."</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="reiseprofil">
+        <p class="section-kicker">Bilanz</p>
+        <h2>Eigene Reiseoekonomie: Erholung, Stress, Belastung</h2>
+        <form id="travelForm" class="travel-form">
+          <label>Reisen/Jahr <input type="number" id="tripCount" min="0" max="40" value="4" /></label>
+          <label>Kurzstreckenfluege/Jahr <input type="number" id="shortFlights" min="0" max="40" value="1" /></label>
+          <label>Langstreckenfluege/Jahr <input type="number" id="longFlights" min="0" max="20" value="0" /></label>
+          <label>Motiv Sehnsucht <input type="range" id="motSehnsucht" min="0" max="10" value="7" /></label>
+          <label>Motiv Erholung <input type="range" id="motRest" min="0" max="10" value="6" /></label>
+          <label>Erlebter Reisestress <input type="range" id="motStress" min="0" max="10" value="5" /></label>
+          <label>Selfie-/Sichtbarkeitsdruck <input type="range" id="motDisplay" min="0" max="10" value="4" /></label>
+          <label>Interesse an echten Begegnungen <input type="range" id="motEncounter" min="0" max="10" value="6" /></label>
+        </form>
+        <div class="scoreboard">
+          <article><p class="label">Gewinn</p><p class="score" id="gainScore">0</p></article>
+          <article><p class="label">Stress</p><p class="score" id="stressScore">0</p></article>
+          <article><p class="label">Ortslast</p><p class="score" id="localCostScore">0</p></article>
+          <article><p class="label">Umweltlast</p><p class="score" id="ecoScore">0</p></article>
+        </div>
+        <p class="focus-question" id="scoreInterpretation"></p>
+      </section>
+
+      <section class="panel" id="blog">
+        <p class="section-kicker">Intellektueller Reiseblog</p>
+        <h2>Schreibe die Lernreise als Etappenblog</h2>
+        <form id="blogForm" class="blog-form">
+          <label>
+            Raststaette
+            <select id="blogStop"></select>
+          </label>
+          <label>
+            Titel
+            <input type="text" id="blogTitle" placeholder="z. B. Leere mit Stau im Ruecken" required />
+          </label>
+          <label>
+            Beobachtung (Paradox)
+            <textarea id="blogObservation" rows="3" placeholder="Was wurde gesucht, was wurde erzeugt?" required></textarea>
+          </label>
+          <label>
+            Textbezug (Werk + Seite)
+            <input type="text" id="blogReference" placeholder="z. B. Abgefahren, Kap. 6, S. 92-97" required />
+          </label>
+          <button type="submit">Etappe posten</button>
+        </form>
+        <div id="blogEntries" class="blog-entries"></div>
+        <div class="teacher-controls">
+          <button id="teacherModeBtn" type="button" aria-pressed="false">Lehrerversion aktivieren</button>
+          <p id="teacherModeState" class="meta-note">Schuelermodus aktiv.</p>
+        </div>
+        <section id="teacherPanel" class="teacher-panel" hidden aria-live="polite"></section>
+      </section>
+
+      <section class="panel resources" id="quellen">
+        <p class="section-kicker">Quellen</p>
+        <h2>Primaertexte und Videoimpulse</h2>
+        <div class="resource-grid">
+          <article class="card">
+            <h3>Wiedmer</h3>
+            <ul>
+              <li>
+                <a href="https://www.dropbox.com/scl/fi/aj5alzo90c8h6pz5pxdpf/JakobWiedmer_Flut.pdf?rlkey=g1dbp4e8pxmeaqh09u8fayrmb&st=fc2so99m&dl=0" target="_blank" rel="noreferrer">
+                  Flut (Dropbox-Link)
+                </a>
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>PDF-Basis lokal</h3>
+            <ul>
+              <li><a href="./material/Enzensberger_Tourismus.pdf">Enzensberger</a></li>
+              <li><a href="./material/Groebner_Abgefahren_9783835397835.pdf">Groebner: Abgefahren</a></li>
+              <li><a href="./material/Groebner_Ferienmuede_9783835397323.pdf">Groebner: Ferienmuede</a></li>
+              <li><a href="./material/Der sanfte Terror des Tourismus.pdf">Paquot</a></li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Videoimpulse</h3>
+            <ul>
+              <li><a href="https://www.youtube.com/watch?v=VB3kYibA6BA" target="_blank" rel="noreferrer">YouTube 1</a></li>
+              <li><a href="https://www.youtube.com/watch?v=vNbVhLwL6Dk" target="_blank" rel="noreferrer">YouTube 2</a></li>
+              <li><a href="https://www.youtube.com/watch?v=UKuo_6SUkTg" target="_blank" rel="noreferrer">YouTube 3</a></li>
+              <li><a href="https://www.youtube.com/watch?v=esE_-a2DUpc" target="_blank" rel="noreferrer">YouTube 4</a></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <p>
-        Projektdateien: <a href="./sprechertext.md">Sprechertext</a> und
-        <a href="./quellen.md">Quellenhinweise</a>.
+        Didaktikdateien: <a href="./docs/choreografie.md">Choreografie</a> |
+        <a href="./docs/quellen-und-positionen.md">Quellen & Positionen</a>
       </p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
