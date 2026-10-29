@@ -1,0 +1,8 @@
+# Lokale Build-Zwischenprodukte: mit den Build-Skripten jederzeit reproduzierbar
+exports/audio/*.aiff
+exports/audio/concat.txt
+exports/video/base.mp4
+exports/video/rich-visual.mp4
+exports/video/flut-overtourism-rich-temp.mp4
+exports/video/slideshow.txt
+flut-overtourism-rich-temp.mp4

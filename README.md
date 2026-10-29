@@ -19,6 +19,8 @@ node build-media.mjs
 node build-rich-video.mjs
 ```
 
+Die Build-Skripte erzeugen einige Zwischenprodukte lokal, etwa AIFF-Roh-Audios und temporäre MP4-Dateien. Diese sind bewusst in `.gitignore` ausgeschlossen: Für die Website werden ausschliesslich die finalen M4A-, Untertitel- und MP4-Dateien versioniert.
+
 ## Eingangsdateien
 - Kapiteltexte: `chapters.json`
 - Narrative Seite: `script.js`
