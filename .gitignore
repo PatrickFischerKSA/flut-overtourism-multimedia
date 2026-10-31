@@ -6,3 +6,6 @@ exports/video/rich-visual.mp4
 exports/video/flut-overtourism-rich-temp.mp4
 exports/video/slideshow.txt
 flut-overtourism-rich-temp.mp4
+
+# Basisvideo nicht mehr versionieren; das Rich-Video ist die Website-Fassung
+exports/video/flut-overtourism.mp4
