@@ -7,7 +7,6 @@ Dieses Paket enthaelt:
 - Kapitel-Audios (`exports/audio/01.m4a` bis `09.m4a`)
 - Musikbett (`exports/audio/music-bed.m4a`)
 - Untertitel (`exports/subtitles/flut-overtourism.de.srt` und `.vtt`)
-- Finale MP4 (`exports/video/flut-overtourism.mp4`)
 - Rich MP4 mit Szenenbildern und Overlays (`exports/video/flut-overtourism-rich.mp4`)
 
 ## Rebuild
@@ -19,7 +18,7 @@ node build-media.mjs
 node build-rich-video.mjs
 ```
 
-Die Build-Skripte erzeugen einige Zwischenprodukte lokal, etwa AIFF-Roh-Audios und temporäre MP4-Dateien. Diese sind bewusst in `.gitignore` ausgeschlossen: Für die Website werden ausschliesslich die finalen M4A-, Untertitel- und MP4-Dateien versioniert.
+Die Build-Skripte erzeugen einige Zwischenprodukte lokal, etwa AIFF-Roh-Audios und temporäre MP4-Dateien. Diese sind bewusst in `.gitignore` ausgeschlossen: Für die Website werden die finalen M4A-, Untertitel- und das Rich-MP4 versioniert. Das einfache Basis-MP4 ist nur ein lokal erzeugbares Zwischenprodukt und wird nicht mehr im Repository bereitgestellt.
 
 ## Eingangsdateien
 - Kapiteltexte: `chapters.json`
